@@ -1,99 +1,93 @@
 body {
-    text-align: center;
-    background: linear-gradient(45deg, #ff6b6b, #6b6bff);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a192f; /* Bluish-black background */
+  color: white;
+  text-align: center;
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: white;
-    text-shadow: 2px 2px 5px black;
+header {
+  padding: 20px;
+  background-color: #1c2b45;
 }
 
-.input-container {
-    margin-bottom: 20px;
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #112240;
+  padding: 10px;
 }
 
-input {
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #64ffda;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  width: 80%;
+  max-width: 400px;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
 button {
-    background-color: gold;
-    border: none;
-    padding: 10px 15px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: #64ffda;
+  color: #0a192f;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 button:hover {
-    background-color: #ffcc00;
-    transform: scale(1.1);
+  background-color: #52e0c4;
 }
 
-.game-board {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer {
+  background-color: #1c2b45;
+  padding: 15px;
+  margin-top: 20px;
+}
+.contact-button:hover {
+  background-color: #0056b3;
 }
 
-.board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
+.contact-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.cell {
-    width: 100px;
-    height: 100px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.cell:hover {
-    background: rgba(255, 255, 255, 0.8);
-    transform: scale(1.1);
-}
-
-.reset-btn {
-    margin-top: 20px;
-}
-
-.hide {
-    display: none;
-}
-
-@keyframes sparkle {
-    0% {box-shadow: 0 0 5px white;}
-    50% {box-shadow: 0 0 20px gold;}
-    100% {box-shadow: 0 0 5px white;}
-}
-
-.winning-cell {
-    animation: sparkle 1s infinite;
+.contact-button:hover {
+  background-color: #0056b3;
 }
